@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BULB ON/OFF</title>
+</head>
+<body>
+	<script>
+		var pic="";
+		function bulb(num){
+			if(num==0)
+				pic="on.png";
+			else
+				pic="off.png";
+			document.getElementById("light").src=pic;
+		}
+	</script>
+	<img id="light" src="off.png">
+	<button id="on" onclick="bulb(0)" src="on.png">SWITCH ON</button>
+	<button id="off" onclick="bulb(1)" src="off.png">SWITCH OFF</button>
+</body>
+</html>
